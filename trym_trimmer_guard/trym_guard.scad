@@ -3,6 +3,11 @@
 //
 // First OpenSCAD project. Kind of a mess.
 
+// The length to cut the hair in millimeters (measure twice, cut once though)
+guard_height = 18;
+
+/* Hidden */
+
 base_width = 38.32;
 base_length = 27.70+9.18;
 base_thickness = 1.77;
@@ -189,4 +194,4 @@ module trym_teeth(height) {
 }
 
 trym_base();
-translate([0, 50, 0]) trym_teeth(18);
+translate([0, 50, 0]) trym_teeth(guard_height);
